@@ -1,5 +1,20 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-tklauser-go-sysconf (0.3.11-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * New upstream version 0.3.11
+  * Skip test OPEN_MAX with getconf (Closes: #1042274)
+  * Update Standards-Version to 4.6.2 (no changes)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Shengjing Zhu <zhsj@debian.org>  Fri, 28 Jul 2023 16:45:04 +0800
+
+golang-github-tklauser-go-sysconf (0.3.9-2) unstable; urgency=medium
+
+  * Source only upload for testing migration.
+
+ -- Aloïs Micard <creekorful@debian.org>  Sat, 27 Nov 2021 11:18:20 +0100
+
+golang-github-tklauser-go-sysconf (0.3.9-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1000415)
+
+ -- Aloïs Micard <creekorful@debian.org>  Mon, 22 Nov 2021 22:49:56 +0100

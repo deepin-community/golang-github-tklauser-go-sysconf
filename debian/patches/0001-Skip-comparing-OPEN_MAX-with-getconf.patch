@@ -1,0 +1,23 @@
+From: Shengjing Zhu <zhsj@debian.org>
+Date: Fri, 28 Jul 2023 16:42:45 +0800
+Subject: Skip comparing OPEN_MAX with getconf
+
+Bug: https://github.com/tklauser/go-sysconf/issues/77
+Bug-Debian: https://bugs.debian.org/1042274
+---
+ sysconf_test.go | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/sysconf_test.go b/sysconf_test.go
+index 1889d92..6976c14 100644
+--- a/sysconf_test.go
++++ b/sysconf_test.go
+@@ -55,7 +55,7 @@ func TestGetconf(t *testing.T) {
+ 	}{
+ 		{sysconf.SC_CLK_TCK, "CLK_TCK"},
+ 		{sysconf.SC_HOST_NAME_MAX, "HOST_NAME_MAX"},
+-		{sysconf.SC_OPEN_MAX, "OPEN_MAX"},
++		//{sysconf.SC_OPEN_MAX, "OPEN_MAX"},
+ 		{sysconf.SC_PAGE_SIZE, "PAGE_SIZE"},
+ 	}
+ 
